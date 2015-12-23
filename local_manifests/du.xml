@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Please do not manually edit this file-->
+<manifest>
+  <remote name="chas" fetch="git://github.com/chasmodo" />
+  <!--Remove/replace shit-->
+  <remove-project name="android_vendor_lge" />
+  <remove-project name="android_vendor_huawei" />
+  <!--<project name="android_packages_apps_SoundRecorder" path="packages/apps/SoundRecorder" remote="chas" revision="m" />
+  <project name="android_packages_apps_Encore" path="packages/apps/Encore" remote="chas" revision="m" />-->
+  <!--Shamu-->
+  <project name="android_device_moto_shamu" path="device/moto/shamu" remote="du" revision="m" />
+  <project name="android_kernel_moto_shamu" path="kernel/moto/shamu" remote="du" revision="m" />
+  <!--Flounder-->
+  <project name="android_device_htc_flounder" path="device/htc/flounder" remote="du" revision="m" />
+  <project name="android_kernel_htc_flounder" path="kernel/htc/flounder" remote="du" revision="m" />
+</manifest>
