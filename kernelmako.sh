@@ -4,7 +4,7 @@
 # BUILD THE ROM                                            #
 ############################################################
 
-cd ~/du51-caf && make clobber
+cd ~/du6-aosp && make clobber
 
 # Turn on compiler caching
 
@@ -18,17 +18,9 @@ export DU_BUILD_TYPE=TEST
 
 # Start build process
 
-cd ~/du51-caf && . build/envsetup.sh && lunch du_find7-userdebug
+cd ~/du6-aosp && . build/envsetup.sh && lunch du_mako-userdebug
 
 time make -j16 bootimage
-
-############################################################
-# COPY ROM TO DU-OFFICIAL                                  #
-############################################################
-
-# cp ~/du51-caf/out/target/product/yuga/DU_yuga_5*.zip ~/DU-Official/yuga
-# rm -rf ~/du51-caf/out/target/product/yuga
-# make clobber
 
 echo -e "\n"
 

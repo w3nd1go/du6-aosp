@@ -17,7 +17,7 @@ export USE_PREBUILT_CACHE=1
 export DU_BUILD_TYPE=TEST
 
 # Start build process
-. build/envsetup.sh && lunch du_flounder-userdebug
+. build/envsetup.sh && lunch du_flo-userdebug
 time make -j16 bacon
 
 ############################################################
@@ -27,10 +27,10 @@ time make -j16 bacon
 set -e
 
 # Copy build from /out to /DU-Official folder
-cp ~/du6-aosp/out/target/product/flounder/DU_flounder_6*.zip ~/DU-Official/volantis
+cp ~/du6-aosp/out/target/product/flo/DU_flo_6*.zip ~/DU-Official/flo
 
 # Remove the /out or make clobber
-# rm -rf ~/du6-aosp/out/target/product/flounder
+# rm -rf ~/du6-aosp/out/target/product/flo
 # make clobber
 
 # Notify user of success
